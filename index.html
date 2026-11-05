@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum Vitae</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #e8edf5;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .curriculum {
+            display: flex;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .izquierda {
+            display: flex;
+            flex-direction: column;
+            width: 35%;
+            background: #17365d;
+            color: white;
+            padding: 25px;
+        }
+
+        .derecha {
+            display: flex;
+            flex-direction: column;
+            width: 65%;
+            padding: 30px;
+        }
+
+        .foto {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            align-self: center;
+        }
+
+        h1 {
+            color: #17365d;
+        }
+
+        h2 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+        }
+
+        .izquierda h2 {
+            color: white;
+        }
+
+        p, li {
+            line-height: 1.6;
+        }
+
+        .seccion {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 650px) {
+            .curriculum {
+                flex-direction: column;
+            }
+
+            .izquierda, .derecha {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="curriculum">
+
+    <aside class="izquierda">
+
+        <img src="https://th.bing.com/th/id/OIP.I_Yn1b-POhdiVwlRi1HQBQAAAA?w=202&h=200&c=7&r=0&o=7&pid=1.7&rm=3" alt="Mi fotografía" class="foto">
+
+        <h2>Contacto</h2>
+        <p>Teléfono: 0968222761</p>
+        <p>Correo: brayancarlos12@gmail.com</p>
+        <p>Ciudad: Cuenca, Ecuador</p>
+
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Trabajo en equipo</li>
+            <li>Comunicación</li>
+            <li>Responsabilidad</li>
+            <li>Informática básica</li>
+            <li>Creatividad</li>
+        </ul>
+
+    </aside>
+
+    <main class="derecha">
+
+        <h1>Brayam Lanche</h1>
+        <h3>Estudiante de desarollo de software</h3>
+
+        <section class="seccion">
+            <h2>Perfil profesional</h2>
+            <p>
+                Soy una persona responsable, creativa y dedicada.
+                Me interesa la tecnología, la informática y el
+                desarrollo de páginas web. Tengo disposición
+                para aprender y trabajar en equipo.
+            </p>
+        </section>
+
+        <section class="seccion">
+            <h2>Formación académica</h2>
+            <p><strong>Educación secundaria</strong></p>
+            <p>Estudios en curso.</p>
+            <p>Área de desarollo de software.</p>
+        </section>
+
+        <section class="seccion">
+            <h2>Experiencia</h2>
+            <p><strong>Experiencia académica</strong></p>
+            <p>
+                Realización de trabajos escolares,
+                proyectos tecnológicos y actividades
+                relacionadas con informática.
+            </p>
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
